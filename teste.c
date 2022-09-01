@@ -131,8 +131,14 @@ void alteraHeap(fila_t* fila, int n, int novo){
         }
 }
 
-int eh_Heap(){
-
+int eh_Heap(fila_t* fila, fila->n){
+    int verdade = 1;
+    int i = n;
+    while(i>1 && verdade == 1){
+        if (fila->v[i/2].prioridade < fila->v[i].prioridade)
+            verdade = 0;
+        i--;
+    }
 }
 
 int main(){
