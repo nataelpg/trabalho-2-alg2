@@ -99,14 +99,14 @@ void removeHeap(fila_t* fila){
 }
 
 //n = fila->n(tamanho atual da fila)
-/* void heapSort (fila_t* fila, int n){
+void heapSort (fila_t* fila, int n){
     int i;
     heapfy(fila, n);
     for (i = n; 1<i; i--){
         troca(&fila->v[1], &fila->v[i]);
-        sacodeHeap(fila, i);
+        sacodeHeap(fila, i-1);
     }
-}  */
+} 
 
 void imprimeHeap(fila_t* fila, int N){
     int i;
@@ -118,6 +118,22 @@ void imprimeHeap(fila_t* fila, int N){
     }
 }
 
+void alteraHeap(fila_t* fila, int n, int novo){
+    fila->v[n].prioridade = novo;
+/*     heapfy(fila, fila->n); */
+    if (n == 1)
+        sacodeHeap(fila, fila->n);
+    else if (fila->v[n].prioridade > fila->v[n/2].prioridade)
+            insereHeap(fila, n);
+        else{
+            troca(&fila->v[1], &fila->v[n]);
+            sacodeHeap(fila, fila->n);
+        }
+}
+
+int eh_Heap(){
+
+}
 
 int main(){
     fila_t* fila = criaFila();
@@ -141,16 +157,24 @@ int main(){
     heapfy(fila, fila->n);
     imprimeHeap(fila, fila->n);
 
+    printf("---------------------------------------");
+    printf("\n");
+    alteraHeap(fila, 3, 1);
+    imprimeHeap(fila, fila->n);
+
+
 /*     printf("---------------------------------------");
     printf("\n");
-    sacodeHeap(fila, fila->n);
+    heapSort(fila, fila->n);
     imprimeHeap(fila, fila->n); */
 
 
-    printf("---------------------------------------");
+/*     printf("---------------------------------------");
     printf("\n");
     removeHeap(fila);
-    imprimeHeap(fila, fila->n);
+    imprimeHeap(fila, fila->n); */
+    free(pessoa);
+    free(fila->v);
     free(fila);
 
     return 0;
