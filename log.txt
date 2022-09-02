@@ -1,0 +1,752 @@
+primeiro log: linha 11
+segundo log: linha 400
+terceiro log: linha 600
+
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-------------------------------------- primeiro log --------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+1
+
+opcao 1 escolhida!
+Insira o numero de pacientes na fila: 10
+heap inicializada com sucesso!
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+8
+
+opcao 8 escolhida!
+---------------------------------------
+
+os pacientes na fila são: 
+
+Paciente numero 1
+nome: Gabriel Costa
+idade: 37
+prioridade: 50
+
+Paciente numero 2
+nome: Guilherme Gomes
+idade: 34
+prioridade: 47
+
+Paciente numero 3
+nome: Nayara Batista
+idade: 70
+prioridade: 48
+
+Paciente numero 4
+nome: Joao Machado
+idade: 3
+prioridade: 32
+
+Paciente numero 5
+nome: Alan Pereira
+idade: 62
+prioridade: 33
+
+Paciente numero 6
+nome: Roberto Ferreira
+idade: 56
+prioridade: 20
+
+Paciente numero 7
+nome: Guilherme Machado
+idade: 27
+prioridade: 35
+
+Paciente numero 8
+nome: Julia Gomes
+idade: 30
+prioridade: 23
+
+Paciente numero 9
+nome: Sofia Pereira
+idade: 84
+prioridade: 25
+
+Paciente numero 10
+nome: Julia Ferreira
+idade: 29
+prioridade: 14
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+4
+
+opcao 4 escolhida!
+
+o vetor ja esta em heap!
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+5
+
+opcao 5 escolhida!
+
+Fila ordenada em ordem crescente!
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+6
+
+opcao 6 escolhida!
+
+nao eh heap!
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+4
+
+opcao 4 escolhida!
+fazendo a heap...
+a heap está feita!
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+6
+
+opcao 6 escolhida!
+
+eh heap!
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+2
+
+opcao 2 escolhida!
+Faça o cadastro do paciente: 
+Nome: Carlos Alves
+
+Idade: 
+Prioridade: 
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+
+opcao 2 escolhida!
+Faça o cadastro do paciente: 
+Nome: 
+Idade: 10
+
+Prioridade: 50
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+8
+
+opcao 8 escolhida!
+---------------------------------------
+
+os pacientes na fila são: 
+
+Paciente numero 1
+nome: Gabriel Costa
+idade: 37
+prioridade: 50
+
+Paciente numero 2
+nome: Nayara Batista
+idade: 70
+prioridade: 48
+
+Paciente numero 3
+nome: Alves
+idade: 10
+prioridade: 50
+
+Paciente numero 4
+nome: Guilherme Machado
+idade: 27
+prioridade: 35
+
+Paciente numero 5
+nome: Guilherme Gomes
+idade: 34
+prioridade: 47
+
+Paciente numero 6
+nome: Alan Pereira
+idade: 62
+prioridade: 33
+
+Paciente numero 7
+nome: Joao Machado
+idade: 3
+prioridade: 32
+
+Paciente numero 8
+nome: Julia Ferreira
+idade: 29
+prioridade: 14
+
+Paciente numero 9
+nome: Sofia Pereira
+idade: 84
+prioridade: 25
+
+Paciente numero 10
+nome: Julia Gomes
+idade: 30
+prioridade: 23
+
+Paciente numero 11
+nome: Carlos
+idade: 34
+prioridade: 47
+
+Paciente numero 12
+nome: Roberto Ferreira
+idade: 56
+prioridade: 20
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+6
+
+opcao 6 escolhida!
+
+eh heap!
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+3
+
+opcao 3 escolhida!
+
+paciente atendido com sucesso!
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+8
+
+opcao 8 escolhida!
+---------------------------------------
+
+os pacientes na fila são: 
+
+Paciente numero 1
+nome: Alves
+idade: 10
+prioridade: 50
+
+Paciente numero 2
+nome: Nayara Batista
+idade: 70
+prioridade: 48
+
+Paciente numero 3
+nome: Alan Pereira
+idade: 62
+prioridade: 33
+
+Paciente numero 4
+nome: Guilherme Machado
+idade: 27
+prioridade: 35
+
+Paciente numero 5
+nome: Guilherme Gomes
+idade: 34
+prioridade: 47
+
+Paciente numero 6
+nome: Roberto Ferreira
+idade: 56
+prioridade: 20
+
+Paciente numero 7
+nome: Joao Machado
+idade: 3
+prioridade: 32
+
+Paciente numero 8
+nome: Julia Ferreira
+idade: 29
+prioridade: 14
+
+Paciente numero 9
+nome: Sofia Pereira
+idade: 84
+prioridade: 25
+
+Paciente numero 10
+nome: Julia Gomes
+idade: 30
+prioridade: 23
+
+Paciente numero 11
+nome: Carlos
+idade: 34
+prioridade: 47
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+0
+
+ Comparações heapfy: 21
+ Comparações HeapSort: 9
+
+
+
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-------------------------------------- segundo log --------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+1
+
+opcao 1 escolhida!
+Insira o numero de pacientes na fila: 5
+heap inicializada com sucesso!
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+8
+
+opcao 8 escolhida!
+---------------------------------------
+
+os pacientes na fila são: 
+
+Paciente numero 1
+nome: Naiara Ferreira
+idade: 38
+prioridade: 50
+
+Paciente numero 2
+nome: Alan Costa
+idade: 42
+prioridade: 44
+
+Paciente numero 3
+nome: Sofia Oliveira
+idade: 36
+prioridade: 13
+
+Paciente numero 4
+nome: Gabriel Gomes
+idade: 72
+prioridade: 8
+
+Paciente numero 5
+nome: Naiara Souza
+idade: 75
+prioridade: 42
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+3
+
+opcao 3 escolhida!
+
+paciente atendido com sucesso!
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+8
+
+opcao 8 escolhida!
+---------------------------------------
+
+os pacientes na fila são: 
+
+Paciente numero 1
+nome: Alan Costa
+idade: 42
+prioridade: 44
+
+Paciente numero 2
+nome: Naiara Souza
+idade: 75
+prioridade: 42
+
+Paciente numero 3
+nome: Sofia Oliveira
+idade: 36
+prioridade: 13
+
+Paciente numero 4
+nome: Gabriel Gomes
+idade: 72
+prioridade: 8
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+2
+
+opcao 2 escolhida!
+Faça o cadastro do paciente: 
+Nome: Matheus
+
+Idade: 20
+
+Prioridade: 50
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+8
+
+opcao 8 escolhida!
+---------------------------------------
+
+os pacientes na fila são: 
+
+Paciente numero 1
+nome: Matheus
+idade: 20
+prioridade: 50
+
+Paciente numero 2
+nome: Alan Costa
+idade: 42
+prioridade: 44
+
+Paciente numero 3
+nome: Sofia Oliveira
+idade: 36
+prioridade: 13
+
+Paciente numero 4
+nome: Gabriel Gomes
+idade: 72
+prioridade: 8
+
+Paciente numero 5
+nome: Naiara Souza
+idade: 75
+prioridade: 42
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+6
+
+opcao 6 escolhida!
+
+eh heap!
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+
+
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-------------------------------------- terceiro log --------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+1
+
+opcao 1 escolhida!
+Insira o numero de pacientes na fila: 5
+heap inicializada com sucesso!
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+8
+
+opcao 8 escolhida!
+---------------------------------------
+
+os pacientes na fila são: 
+
+Paciente numero 1
+nome: Nayara Santos
+idade: 5
+prioridade: 50
+
+Paciente numero 2
+nome: Joao Santos
+idade: 24
+prioridade: 50
+
+Paciente numero 3
+nome: Alan Silva
+idade: 28
+prioridade: 37
+
+Paciente numero 4
+nome: Nayara Silva
+idade: 21
+prioridade: 12
+
+Paciente numero 5
+nome: Nayara Costa
+idade: 48
+prioridade: 50
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+6
+
+opcao 6 escolhida!
+
+eh heap!
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+5
+
+opcao 5 escolhida!
+
+Fila ordenada em ordem crescente!
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+6
+
+opcao 6 escolhida!
+
+nao eh heap!
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+8
+
+opcao 8 escolhida!
+---------------------------------------
+
+os pacientes na fila são: 
+
+Paciente numero 1
+nome: Nayara Silva
+idade: 21
+prioridade: 12
+
+Paciente numero 2
+nome: Alan Silva
+idade: 28
+prioridade: 37
+
+Paciente numero 3
+nome: Joao Santos
+idade: 24
+prioridade: 50
+
+Paciente numero 4
+nome: Nayara Costa
+idade: 48
+prioridade: 50
+
+Paciente numero 5
+nome: Nayara Santos
+idade: 5
+prioridade: 50
+
+	0 - Sair
+	1 - IniciaHeap
+	2 - InsereHeap
+	3 - removeHeap
+	4 - heapfy
+	5 - HeapSort
+	6 - checaHeap
+	7 - AlteraHeap
+	8 - ImprimeVetor
+0
+
+ Comparações heapfy: 0
+ Comparações HeapSort: 2
