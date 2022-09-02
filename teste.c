@@ -108,9 +108,9 @@ void heapSort (fila_t* fila, int n){
     }
 } 
 
-void imprimeHeap(fila_t* fila, int N){
+void imprimeHeap(fila_t* fila, int n){
     int i;
-    for (i=1; i <= N; i++){
+    for (i=1; i <= n; i++){
         printf("\n");
 /*         printf ("nome: %s\n", fila->v[i].nome);
         printf("idade: %d\n", fila->v[i].idade); */
@@ -131,7 +131,17 @@ void alteraHeap(fila_t* fila, int n, int novo){
         }
 }
 
-int eh_Heap(fila_t* fila, fila->n){
+void inicHeap(fila_t* fila, pessoa_t* pessoa, int n){
+    int i;
+    for (i=1; i < n; i++){
+        if (fila->n < MAX){
+            iniciaPessoa(pessoa);
+            queue(fila, pessoa);
+        }
+    }   
+}
+
+int checaHeap(fila_t* fila, int n){
     int verdade = 1;
     int i = n;
     while(i>1 && verdade == 1){
@@ -139,6 +149,8 @@ int eh_Heap(fila_t* fila, fila->n){
             verdade = 0;
         i--;
     }
+
+    return verdade;
 }
 
 int main(){
@@ -165,8 +177,17 @@ int main(){
 
     printf("---------------------------------------");
     printf("\n");
-    alteraHeap(fila, 3, 1);
+    heapfy(fila, fila->n);
     imprimeHeap(fila, fila->n);
+/*     if (eh_Heap(fila, fila->n) == 1)
+        printf ("eh heap");
+    else
+        printf ("nao eh heap");     */
+
+/*     printf("---------------------------------------");
+    printf("\n");
+    alteraHeap(fila, 3, 1);
+    imprimeHeap(fila, fila->n); */
 
 
 /*     printf("---------------------------------------");
@@ -177,7 +198,7 @@ int main(){
 
 /*     printf("---------------------------------------");
     printf("\n");
-    removeHeap(fila);
+    removeHeap(fila);  
     imprimeHeap(fila, fila->n); */
     free(pessoa);
     free(fila->v);
