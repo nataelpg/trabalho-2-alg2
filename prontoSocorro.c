@@ -14,9 +14,13 @@ pessoa_t* criaPessoa(){
 }
 
 void iniciaPessoa(pessoa_t* pessoa){
-    strcpy(pessoa->nome, nomeAleat());
+    char* nome = nomeAleat();
+
+    strcpy(pessoa->nome, nome);
     pessoa->prioridade = 1 + rand()%50;
     pessoa->idade = rand()%100;
+
+    free(nome);
 }
 
 void troca(pessoa_t *a, pessoa_t *b) {
@@ -26,16 +30,15 @@ void troca(pessoa_t *a, pessoa_t *b) {
  }
 
 char* nomeAleat(){
-    char* nome;
-    char* sobrenome;
-    char* nomeCompleto;
-    char aux[100] = "";
+    char* nome, * sobrenome, * nomeCompleto;
+    nomeCompleto = malloc(sizeof(char) * 100);
+
     char* listaNomes[11] = {"Naiara ", "Nayara ", "Roberto ", "Pedro ", "Joao ", "Guilherme ", "Gabriel ", "Alan ", "Sofia ", "Maria ", "Julia "};
     char* listaNomes2[11] = {"Silva", "Santos", "de Almeida", "Oliveira", "Batista", "Costa", "Gomes", "Souza", "Pereira", "Ferreira", "Machado"};
     nome = listaNomes [rand()%11];
     sobrenome = listaNomes2 [rand()%11];
-    strcat(strcpy(aux, nome),sobrenome);
-    nomeCompleto = aux;
-
+    
+    strcat(strcpy(nomeCompleto, nome),sobrenome);
+    
     return nomeCompleto;
 }
