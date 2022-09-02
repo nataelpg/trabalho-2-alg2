@@ -118,8 +118,10 @@ int main(){
             if (fila->n == 0)
                 printf("\nfila sem pacientes!!");
             else{
-                printf ("Digite qual paciente voce deseja alterar a prioridade e a sua nova prioridade: ");
-                scanf("%d%d", &i, &prioridade);
+                printf ("Digite qual paciente voce deseja alterar a prioridade: ");
+                scanf("%d", &i);
+                printf("Digite a nova prioridade: ");
+                scanf("%d", &prioridade);
                 alteraHeap(fila, i, prioridade);
                 printf ("\nPrioridade do paciente alterada com sucesso!");
             }
@@ -139,7 +141,7 @@ int main(){
     }while(opcao != 0);
 
     printf ("\n Comparações heapfy: %d", fila->comp1);
-    printf ("\n Comparações HeapSort: %d", fila->comp2);    
+    printf ("\n Comparações HeapSort: %d\n", fila->comp2);    
 
     free(pessoa);
     free(fila->v);
