@@ -8,4 +8,4 @@ all:
 	$(CC) heap_heap_upa.o heap.o prontoSocorro.o -o heap_heap_upa 
 
 clean:
-	rm *.o
+	-rm *.o heap_heap_upa
