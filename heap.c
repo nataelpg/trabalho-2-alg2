@@ -2,12 +2,14 @@
 #include<stdio.h>
 #include "heap.h"
 #include "prontoSocorro.h"
-#define MAX 50
+#define MAX 51
 
 fila_t* criaFila (){
     fila_t* filaPrio = malloc(sizeof(fila_t));
     filaPrio->v = malloc(MAX*sizeof(pessoa_t));
     filaPrio->n = 0;
+    filaPrio->comp1 = 0;
+    filaPrio->comp2 = 0;
 
     return filaPrio;
 }
@@ -24,7 +26,7 @@ void dequeue(fila_t* fila, int n){
 
 void inicHeap(fila_t* fila, pessoa_t* pessoa, int n){
     int i;
-    for (i=1; i < n; i++){
+    for (i=1; i <= n; i++){
         if (fila->n < MAX){
             iniciaPessoa(pessoa);
             queue(fila, pessoa);
@@ -35,6 +37,7 @@ void inicHeap(fila_t* fila, pessoa_t* pessoa, int n){
 
 void insereHeap (fila_t* fila, int n){
     while (n > 1 && fila->v[n/2].prioridade < fila->v[n].prioridade) {
+        fila->comp1++;
         troca(&fila->v[n], &fila->v[n/2]);
         n = n/2;
     }
@@ -56,10 +59,14 @@ void heapfy (fila_t* fila, int n){
 void sacodeHeap(fila_t* fila, int n){
     int i = 2;
     while (i<= n){
-        if (i < n && fila->v[i].prioridade < fila->v[i+1].prioridade)
+        if (i < n && fila->v[i].prioridade < fila->v[i+1].prioridade){
+            fila->comp2++;
             i++;
-        if (fila->v[i/2].prioridade >= fila->v[i].prioridade)
+        }
+        if (fila->v[i/2].prioridade >= fila->v[i].prioridade){
+            fila->comp2++;
             break;
+        }
         troca(&fila->v[i/2], &fila->v[i]);
         i = i*2;
     }
@@ -68,6 +75,8 @@ void sacodeHeap(fila_t* fila, int n){
 
 void heapSort (fila_t* fila, int n){
     int i;
+    fila->comp1 = 0;
+    fila->comp2 = 0;
     heapfy(fila, n);
     for (i = n; 1<i; i--){
         troca(&fila->v[1], &fila->v[i]);

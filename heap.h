@@ -1,25 +1,34 @@
 #ifndef _LIBheap_t_H
 #define _LIBheap_t_H
 #include "prontoSocorro.h"
-#define MAX 50
+#define MAX 51
 
+/*struct fila com ponteiro para vetor, tamanho da fila, e variaveis para contar as comparacoes*/
 struct fila{
     pessoa_t *v;
-    int n, tamanho;
+    int n, comp1, comp2;
 };
 typedef struct fila fila_t;
 
 
 /*
- *Inicializa a heap na memória. 
+ *Inicializa uma fila na memoria. 
 */
 fila_t* criaFila ();
 
-
+/*
+*Colca os elementos na fila por ordem de insercao
+*/
 void queue(fila_t* fila , pessoa_t* pessoa);
 
+/*
+*Retira o ultimo elemento da fila 
+*/
 void dequeue(fila_t* fila, int n);
 
+/*
+*Inicaliza as pessoas na fila com nome idade e prioridade
+*/
 void inicHeap(fila_t* fila, pessoa_t* pessoa, int n);
 
 /*
@@ -37,7 +46,9 @@ void removeHeap(fila_t* fila);
 */
 void heapfy (fila_t* fila, int n);
 
-
+/*
+*coloca elemento na posicao correta da heap
+*/
 void sacodeHeap(fila_t* fila, int n);
 
 /*
@@ -50,7 +61,10 @@ void heapSort (fila_t* fila, int n);
 */
 void imprimeHeap(fila_t* fila, int n);
 
-
+/*
+* Recebe o elemento que tera a prioridade alterada e reposiciona ele na heap
+*/
+void desceHeap(fila_t* fila, int k, int novo);
 
 /* 
  *Altera a prioridade de um elemento da heap e reposiciona ele
