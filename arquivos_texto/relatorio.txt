@@ -1,0 +1,47 @@
+------------------------------------Trabalho 2 algoritmos 2-----------------------------------------------
+
+Madame Estrela comanda o sistema de uma upa, nela ela usa todas as opcoes necessarias para deixar a fila o mais eficiente possivel.
+Com as opcoes ela consegue inserir na fila, remover da fila, verificar se a fila esta da maneira correta e ordenar de forma crescente.
+Ajude-a a manter a ordem na fila!
+
+Quanto ao programa:
+->Programa recebe uma fila como paramentro
+->cria um vetor aleatorio na struct fila que pode ser modificado
+
+Funcoes heap:
+->InicHeap: inicia o vetor na fila com dados das pessoas de forma aleatória;
+->InsereHeap: coloca uma pessoa na fila de forma manual;
+->RemoveHeap: remove a pessoa de maior prioridade na fila;
+->SacodeHeap: realoca o primeiro elemento na heap colocando na posicao correta;
+->AlteraHeap: altera a prioridade do paciente e realoca ele na fila conforme a nova prioridade;
+->Heapify: transforma uma fila norma em uma arvore binaria;
+->ChecaHeap: verifica se uma fila eh ou nao uma heap;
+->DesceHeap: funcao que usa a mesma logica de sacodeHeap, apenas recebe e utiliza parâmetros de forma diferente;
+
+Funcoes auxiliares:
+->CriaFila: cria a fila em que o vetor sera alocado;
+->CriaPessoa: cria a struct de pessoas que sera utilizada para preencher o vetor;
+->IniciaPessoa: Preenche o nome, idade e prioridade da pessoa de forma aleatoria;
+->nomeAleat: cria um nome aleatorio baseado em duas listas de nomes;
+->troca: troca duas pessoas no vetor;
+
+AlteraHeap e RemoveHeap:
+As duas funcoes foram feitas reutilizando funcoes ja existentes no programa,
+Para alcançar o objetivo de ambas foi apenas utlizado lógica e então mesclado com as funções.
+A funcao "alteraHeap" possui uma funcao "adicional" que consiste apenas numa versao alterada de SacodeHeap,
+em alteraHeap recebe-se o elemento que quer ser removido e sua nova prioridade para ser realocado na heap, enquanto em sacodeHeap apenas realoca o "novo" primeiro elemento.
+A funcao "RemovoeHeap" foi aplicado a logica tradicional de filas, em que se deve remover o elemento de maior prioridade, utilizando a funcao sacodeHeap como auxilio.
+-----------------------------------------------------------------------------------------------------------------------------------
+Passos:
+    1.Criar as structs e definir o que cada uma vai guardar
+    2.Definir as funcoes auxiliares 
+    3.Definir as funcoes principais e testar o programa
+    4.Arrumar os bugs das funcoes e finalizar o programa.
+    5.No final eh so executar!
+----------------------------------------------------------------------------------------------------------------------------------
+Considerações finais:
+    O código foi feito como se pediu, disponilizamos arquivos de logs para demonstrar os testes e tambem a listagem do codigo em C.
+    Tambem foi feito a página html contendo todos os arquivos necessários.
+
+
+Trabalho feito por: Natael Pontarolo Gomes e Matheus Telles Batista.
